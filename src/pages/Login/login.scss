@@ -1,0 +1,42 @@
+.loginbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .login{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
+
+        padding: 5rem;
+        border-radius: 10px;
+
+        .contactContainer{
+          
+            padding: 3rem;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(228, 228, 231, 0.2) 0px 7px 29px 0px;
+            .contactContainerForm{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .title{
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                }
+
+                input{
+                    padding: 0.8rem;
+                    outline: none;
+                    font-size: 1rem;
+                    border: 2px solid rgb(167, 167, 167);
+                    border-radius: 20px;
+                    
+                }
+            }
+        }
+    }
+}

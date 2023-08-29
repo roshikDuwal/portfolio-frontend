@@ -1,0 +1,89 @@
+.contactbox {
+    .contact {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+
+        .contactRightBar {
+            background: linear-gradient(to bottom, hsl(251, 16%, 80%), white);
+            width: 30%;
+            height: inherit;
+            position: absolute;
+        }
+
+        .contactContainer {
+            height: 80%;
+            width: 70%;
+            background-color: white;
+            position: absolute;
+            border-radius: 0px 100px 100px 0px;
+            transform: translateX(20%) translateY(-50%);
+            top: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
+            display: flex;
+            justify-content: center;
+            animation: contactTransition 1s linear forwards;
+
+            .contactContainerForm {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 50%;
+
+                h4 {
+                    text-align: center;
+                    margin: 1vmax;
+                }
+
+                input,
+                textarea {
+                    padding: 0.5vmax;
+                    outline: none;
+                    border: 1px solid black;
+                    border-radius: 3px;
+                    font-size: 1rem;
+                    font-family: 'Roboto';
+                    transform: translateX(-100vw);
+                    animation: contactFormInputs 1s ease-in-out forwards 0.5s;
+                }
+
+                button {
+                    border: 2px solid black;
+                    border-radius: 0;
+                    background-color: rgb(41, 41, 41);
+                    color: white;
+                
+                    font-weight: 700;
+                    transition: all 0.2s linear;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes contactTransition{
+    from{
+        transform:  translateX(-100%) translateY(-50%);
+
+    }to{
+        transform: translateX(20%) translateY(-50%);
+    }
+}
+
+
+
+
+
+@keyframes contactFormInputs{
+    from{
+        transform:  translateX(-100vh) ;
+
+    }to{
+        transform: translateX(0) ;
+    }
+}
