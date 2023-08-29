@@ -3,6 +3,7 @@ import Logo from "../assets/profile.gif"
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa"
 import { BiLogoGmail } from "react-icons/bi"
 import { Link } from "react-scroll"
+import {Link as RouterLink} from "react-router-dom"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -26,6 +27,7 @@ const Navbar = () => {
           <Link to="skills" smooth={true} duration={500} className='hover-underline-animation' >Skills</Link>
           <Link to="project" smooth={true} duration={500} className='hover-underline-animation' >WORK</Link>
           <Link to="contact" smooth={true} duration={500} className='hover-underline-animation' >Contact</Link>
+          <RouterLink to='/admin'>Admin</RouterLink>
         </ul>
 
 
