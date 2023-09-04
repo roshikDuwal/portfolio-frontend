@@ -1,5 +1,6 @@
 import React from 'react'
-import { HiArrowNarrowRight } from "react-icons/hi"
+import PDF from "../../assets/resume.pdf"
+
 
 const Home = () => {
   return (
@@ -13,8 +14,11 @@ const Home = () => {
           <p className=' text-[#8892b0] py-4 max-w-[700px]'>Highly motivated web developer in IT industry seeking new opportunities.
             Dedicated to lifelong learning, I'm constantly seeking new ways to enhance my skills and contribute to impactful projects in dynamic environments. </p>
 
-          <div>
-            <button className='text-white border-2 px-6 py-3 my-2 flex items-center gap-2 ease-in duration-200 hover:bg-red-600 hover:border-red-600 justify-center'>Download Resume <HiArrowNarrowRight /></button>
+          <div classname="resumebtn">
+            <button className='text-white border-2 px-6 py-3 my-2 flex items-center gap-2 ease-in duration-200 hover:bg-red-600 hover:border-red-600 justify-center '>
+              <a href={PDF} download>Download Resume 
+              </a>
+            </button>
           </div>
         </div>
 
